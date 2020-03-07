@@ -1,3 +1,7 @@
+body {
+  background-color: #e9e8e4;
+}
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -37,4 +41,14 @@
   margin-right: auto;
   border-style: inset;
   border-width: 1px;
+}
+
+.react-calendar {
+  min-width: 100%;
+}
+
+.sticky-footer {
+  padding: 1.5rem;
+  margin: 0 -24px;
+  font-size: 0.75rem;
 }
