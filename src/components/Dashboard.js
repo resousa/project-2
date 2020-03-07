@@ -1,5 +1,19 @@
 import React from 'react';
 import './Dashboard.css';
+import { Line, Doughnut } from 'react-chartjs-2';
+
+const state = {
+  labels: ['January', 'February', 'March'],
+  datasets: [
+    {
+      label: 'Sales',
+      backgroundColor: 'salmon',
+      borderColor: 'rgba(0,0,0,1)',
+      borderWidth: 1,
+      data: [65, 59, 80]
+    }
+  ]
+};
 
 export default function Dashboard(props) {
   return (
@@ -43,6 +57,12 @@ export default function Dashboard(props) {
                     <i className='fas fa-file-alt fa-fw'></i> Reports
                   </a>
                 </li>
+                <hr className='sidebar-divider'></hr>
+                <li className='nav-item'>
+                  <a className='nav-link' href='http://www.google.com/'>
+                    <i className='fas fa-users-cog'></i> Admin
+                  </a>
+                </li>
               </ul>
             </div>
           </nav>
@@ -65,7 +85,7 @@ export default function Dashboard(props) {
                         </div>
                       </div>
                       <div className='col-auto'>
-                        <i class='fas fa-dollar-sign'></i>
+                        <i className='fas fa-dollar-sign'></i>
                       </div>
                     </div>
                   </div>
@@ -127,17 +147,47 @@ export default function Dashboard(props) {
               <div className='col-xl-8 col-md-7'>
                 <div className='card mb-4'>
                   <div className='card-header py-3 d-flex flex-row align-items-center justify-content-between'>
-                    <h6 className='m-0 font-weight-bold'>Testing</h6>
+                    <h6 className='m-0 font-weight-bold'>Earnings</h6>
                   </div>
-                  <div className='card-body'></div>
+                  <div className='card-body'>
+                    <Line
+                      data={state}
+                      options={{
+                        title: {
+                          display: true,
+                          text: 'Average Sales/Month',
+                          fontSize: 20
+                        },
+                        legend: {
+                          display: true,
+                          position: 'right'
+                        }
+                      }}
+                    />
+                  </div>
                 </div>
               </div>
               <div className='col-xl-4 col-md-5'>
                 <div className='card mb-4'>
                   <div className='card-header py-3 d-flex flex-row align-items-center justify-content-between'>
-                    <h6 className='m-0 font-weight-bold'>Testing</h6>
+                    <h6 className='m-0 font-weight-bold'>Vendors</h6>
                   </div>
-                  <div className='card-body'></div>
+                  <div className='card-body'>
+                    <Doughnut
+                      data={state}
+                      options={{
+                        title: {
+                          display: true,
+                          text: 'Average Rainfall per month',
+                          fontSize: 20
+                        },
+                        legend: {
+                          display: true,
+                          position: 'right'
+                        }
+                      }}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
