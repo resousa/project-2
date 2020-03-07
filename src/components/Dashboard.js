@@ -68,7 +68,17 @@ export default function Dashboard(props) {
           </nav>
           <main role='main' className='col-md-9 ml-sm-auto col-lg-10 px-4'>
             <div className='d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3'>
-              <h2>Dashboard</h2>
+              <div>
+                <h2>Dashboard</h2>
+              </div>
+              <div>
+                <input
+                  class='form-control'
+                  type='text'
+                  placeholder='Search'
+                  aria-label='Search'
+                ></input>
+              </div>
             </div>
 
             <div className='row'>
@@ -188,6 +198,25 @@ export default function Dashboard(props) {
                       }}
                     />
                   </div>
+                </div>
+              </div>
+            </div>
+            <div className='row'>
+              <div className='col-xl-7 col-md-6'>
+                <div className='card mb-4'>
+                  <div className='card-header py-3 d-flex flex-row align-items-center justify-content-between'>
+                    <h6 className='m-0 font-weight-bold'>TEST</h6>
+                  </div>
+                  <div className='card-body'>asdfasdf</div>
+                </div>
+              </div>
+
+              <div className='col-xl-5 col-md-6'>
+                <div className='card mb-4'>
+                  <div className='card-header py-3 d-flex flex-row align-items-center justify-content-between'>
+                    <h6 className='m-0 font-weight-bold'>TEST 2</h6>
+                  </div>
+                  <div className='card-body'>asdfasdf</div>
                 </div>
               </div>
             </div>
