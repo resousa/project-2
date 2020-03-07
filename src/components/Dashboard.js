@@ -1,6 +1,7 @@
 import React from 'react';
 import './Dashboard.css';
 import { Line, Doughnut } from 'react-chartjs-2';
+import Calendar from 'react-calendar';
 
 const state = {
   labels: ['January', 'February', 'March'],
@@ -11,6 +12,18 @@ const state = {
       borderColor: 'rgba(0,0,0,1)',
       borderWidth: 1,
       data: [65, 59, 80]
+    }
+  ]
+};
+
+const state2 = {
+  labels: ['January', 'February', 'March'],
+  datasets: [
+    {
+      label: 'Orders',
+      backgroundColor: ['red', 'blue', 'green'],
+      hoverBackgroundColor: ['#501800', '#501800', '#501800'],
+      data: [100, 70, 150]
     }
   ]
 };
@@ -69,11 +82,11 @@ export default function Dashboard(props) {
           <main role='main' className='col-md-9 ml-sm-auto col-lg-10 px-4'>
             <div className='d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3'>
               <div>
-                <h2>Dashboard</h2>
+                <h2 className='font-weight-bold'>Welcome {props.name}</h2>
               </div>
               <div>
                 <input
-                  class='form-control'
+                  className='form-control'
                   type='text'
                   placeholder='Search'
                   aria-label='Search'
@@ -154,7 +167,7 @@ export default function Dashboard(props) {
               </div>
             </div>
             <div className='row'>
-              <div className='col-xl-8 col-md-7'>
+              <div className='col-xl-7 col-md-6'>
                 <div className='card mb-4'>
                   <div className='card-header py-3 d-flex flex-row align-items-center justify-content-between'>
                     <h6 className='m-0 font-weight-bold'>Earnings</h6>
@@ -177,18 +190,18 @@ export default function Dashboard(props) {
                   </div>
                 </div>
               </div>
-              <div className='col-xl-4 col-md-5'>
+              <div className='col-xl-5 col-md-6'>
                 <div className='card mb-4'>
                   <div className='card-header py-3 d-flex flex-row align-items-center justify-content-between'>
-                    <h6 className='m-0 font-weight-bold'>Vendors</h6>
+                    <h6 className='m-0 font-weight-bold'>Orders</h6>
                   </div>
-                  <div className='card-body'>
+                  <div className='card-body orders'>
                     <Doughnut
-                      data={state}
+                      data={state2}
                       options={{
                         title: {
                           display: true,
-                          text: 'Average Rainfall per month',
+                          text: 'Average Orders/Month',
                           fontSize: 20
                         },
                         legend: {
@@ -202,24 +215,36 @@ export default function Dashboard(props) {
               </div>
             </div>
             <div className='row'>
-              <div className='col-xl-7 col-md-6'>
+              <div className='col-xl-8 col-md-7'>
                 <div className='card mb-4'>
                   <div className='card-header py-3 d-flex flex-row align-items-center justify-content-between'>
-                    <h6 className='m-0 font-weight-bold'>TEST</h6>
+                    <h6 className='m-0 font-weight-bold'>Vendors</h6>
                   </div>
                   <div className='card-body'>asdfasdf</div>
                 </div>
               </div>
 
-              <div className='col-xl-5 col-md-6'>
+              <div className='col-xl-4 col-md-5'>
                 <div className='card mb-4'>
                   <div className='card-header py-3 d-flex flex-row align-items-center justify-content-between'>
-                    <h6 className='m-0 font-weight-bold'>TEST 2</h6>
+                    <h6 className='m-0 font-weight-bold'>Upcoming</h6>
                   </div>
-                  <div className='card-body'>asdfasdf</div>
+                  <div className='card-body justify-content-center'>
+                    <Calendar />
+                    <div className='pt-3'>
+                      <span>placeholder, interactive calendar</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+            <footer className='sticky-footer bg-dark'>
+              <div className='my-auto'>
+                <div className='copyright text-center my-auto'>
+                  <span className='text-muted'>Copyright &copy; 2020 oh CRUD</span>
+                </div>
+              </div>
+            </footer>
           </main>
         </div>
       </div>
