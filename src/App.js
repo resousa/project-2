@@ -8,7 +8,7 @@ class App extends Component {
   render() {
       // const { logins } = this.state
       return (
-              <Dashboard />
+              <Dashboard name='Admin'/>
       )
   }
 }

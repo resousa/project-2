@@ -9,6 +9,7 @@
     "chart.js": "^2.9.3",
     "mysql2": "^2.1.0",
     "react": "^16.13.0",
+    "react-calendar": "^2.19.2",
     "react-chartjs-2": "^2.9.0",
     "react-dom": "^16.13.0",
     "react-scripts": "3.4.0",
