@@ -6,13 +6,18 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "bcrypt": "^4.0.1",
     "chart.js": "^2.9.3",
     "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "mysql": "^2.18.1",
     "mysql2": "^2.1.0",
     "react": "^16.13.0",
     "react-calendar": "^2.19.2",
     "react-chartjs-2": "^2.9.0",
     "react-dom": "^16.13.0",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
     "sequelize": "^5.21.5"
   },
@@ -22,6 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "node server.js",
+    "testing": "node /Users/Justin/UW-BootCamp/Projects/project-two/project-2/backend/src/index.js",
     "dev": "run-p server start"
   },
   "proxy": "http://localhost:3000",
@@ -39,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
   }
 }
