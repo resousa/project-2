@@ -33,11 +33,11 @@ module.exports = function (sequelize, DataTypes) {
         allowNull: true,
       },
       retail_price: {
-        type: DataTypes.DECIMAL,
+        type: DataTypes.DECIMAL(8,2),
         allowNull: false,
       },
       cost: {
-        type: DataTypes.DECIMAL,
+        type: DataTypes.DECIMAL(8,2),
         allowNull: false,
       },
       createdAt: {

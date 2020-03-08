@@ -25,6 +25,7 @@ app.use(express.static(`public`));
 require(`./controllers/shoesController.js`)(app);
 require(`./controllers/vendorsController.js`)(app);
 require(`./controllers/suppliersController.js`)(app);
+require(`./controllers/salesController.js`)(app);
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
@@ -33,3 +34,4 @@ db.sequelize.sync({ force: true }).then(() => {
     console.log(`App listening on http://localhost:${PORT}`)
   );
 });
+
