@@ -2,6 +2,7 @@ import React from 'react';
 import './Dashboard.css';
 import { Line, Doughnut } from 'react-chartjs-2';
 import Calendar from 'react-calendar';
+import { Link } from 'react-router-dom';
 
 const state = {
   labels: ['January', 'February', 'March'],
@@ -32,12 +33,9 @@ export default function Dashboard(props) {
   return (
     <div className='Dashboard'>
       <nav className='navbar navbar-dark bg-dark fixed-top flex-md-nowrap'>
-        <a
-          className='navbar-brand font-weight-bold'
-          href='http://www.google.com/'
-        >
+        <Link className='navbar-brand font-weight-bold' to='/'>
           Sneaker Inventory
-        </a>
+        </Link>
       </nav>
 
       <div className='container-fluid'>
@@ -46,35 +44,35 @@ export default function Dashboard(props) {
             <div className='sidebar-sticky'>
               <ul className='nav flex-column'>
                 <li className='nav-item'>
-                  <a className='nav-link' href='http://www.google.com/'>
+                  <Link className='nav-link' to='/dashboard'>
                     <i className='fas fa-home fa-fw'></i> Dashboard
-                  </a>
+                  </Link>
                 </li>
                 <li className='nav-item'>
-                  <a className='nav-link' href='http://www.google.com/'>
+                  <Link className='nav-link' to='/orders'>
                     <i className='fas fa-file-invoice-dollar fa-fw'></i> Orders
-                  </a>
+                  </Link>
                 </li>
                 <li className='nav-item'>
-                  <a className='nav-link' href='http://www.google.com/'>
+                  <Link className='nav-link' to='/products'>
                     <i className='fas fa-shoe-prints fa-fw'></i> Products
-                  </a>
+                  </Link>
                 </li>
                 <li className='nav-item'>
-                  <a className='nav-link' href='http://www.google.com/'>
+                  <Link className='nav-link' to='/customers'>
                     <i className='fas fa-id-card fa-fw'></i> Customers
-                  </a>
+                  </Link>
                 </li>
                 <li className='nav-item'>
-                  <a className='nav-link' href='http://www.google.com/'>
+                  <Link className='nav-link' to='/reports'>
                     <i className='fas fa-file-alt fa-fw'></i> Reports
-                  </a>
+                  </Link>
                 </li>
                 <hr className='sidebar-divider'></hr>
                 <li className='nav-item'>
-                  <a className='nav-link' href='http://www.google.com/'>
+                  <Link className='nav-link' to='/admin'>
                     <i className='fas fa-users-cog'></i> Admin
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -84,7 +82,7 @@ export default function Dashboard(props) {
               <div>
                 <h2 className='font-weight-bold'>Welcome {props.name}</h2>
               </div>
-              <div>
+              <div className='search-box'>
                 <input
                   className='form-control'
                   type='text'
@@ -241,7 +239,9 @@ export default function Dashboard(props) {
             <footer className='sticky-footer bg-dark'>
               <div className='my-auto'>
                 <div className='copyright text-center my-auto'>
-                  <span className='text-muted'>Copyright &copy; 2020 oh CRUD</span>
+                  <span className='text-muted'>
+                    Copyright &copy; 2020 oh CRUD
+                  </span>
                 </div>
               </div>
             </footer>
