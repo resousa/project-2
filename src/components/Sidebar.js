@@ -2,6 +2,11 @@ import React from 'react';
 import './Sidebar.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Home from './Home';
+import Orders from './Orders';
+import Products from './Products';
+import Customers from './Customers';
+import Reports from './Reports';
+import Admin from './Admin';
 
 export default function Sidebar() {
   return (
@@ -48,8 +53,23 @@ export default function Sidebar() {
               </div>
             </nav>
             <main role='main' className='col-md-9 ml-sm-auto col-lg-10 px-4'>
-              <Route path='/'>
+              <Route path='/home'>
                 <Home />
+              </Route>
+              <Route path='/orders'>
+                <Orders />
+              </Route>
+              <Route path='/products'>
+                <Products />
+              </Route>
+              <Route path='/customers'>
+                <Customers />
+              </Route>
+              <Route path='/reports'>
+                <Reports />
+              </Route>
+              <Route path='/admin'>
+                <Admin />
               </Route>
             </main>
           </div>
