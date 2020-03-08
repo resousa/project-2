@@ -47,7 +47,7 @@ export default function Home(props) {
 
       <div className='row'>
         <div className='col-md-6 col-xl-3 mb-4'>
-          <div className='card border-primary h-100 py-2'>
+          <div className='card shadow border-primary h-100 py-2'>
             <div className='card-body'>
               <div className='row no-gutters align-items-center'>
                 <div className='col mr-2'>
@@ -67,7 +67,7 @@ export default function Home(props) {
         </div>
 
         <div className='col-md-6 col-xl-3 mb-4'>
-          <div className='card border-success h-100 py-2'>
+          <div className='card shadow border-success h-100 py-2'>
             <div className='card-body'>
               <div className='row no-gutters align-items-center'>
                 <div className='col mr-2'>
@@ -84,7 +84,7 @@ export default function Home(props) {
         </div>
 
         <div className='col-md-6 col-xl-3 mb-4'>
-          <div className='card border-info h-100 py-2'>
+          <div className='card shadow border-info h-100 py-2'>
             <div className='card-body'>
               <div className='row no-gutters align-items-center'>
                 <div className='col mr-2'>
@@ -101,7 +101,7 @@ export default function Home(props) {
         </div>
 
         <div className='col-md-6 col-xl-3 mb-4'>
-          <div className='card border-warning h-100 py-2'>
+          <div className='card shadow border-warning h-100 py-2'>
             <div className='card-body'>
               <div className='row no-gutters align-items-center'>
                 <div className='col mr-2'>
@@ -119,7 +119,7 @@ export default function Home(props) {
       </div>
       <div className='row'>
         <div className='col-xl-7 col-md-6'>
-          <div className='card mb-4'>
+          <div className='card shadow mb-4'>
             <div className='card-header py-3 d-flex flex-row align-items-center justify-content-between'>
               <h6 className='m-0 font-weight-bold'>Earnings</h6>
             </div>
@@ -142,7 +142,7 @@ export default function Home(props) {
           </div>
         </div>
         <div className='col-xl-5 col-md-6'>
-          <div className='card mb-4'>
+          <div className='card shadow mb-4'>
             <div className='card-header py-3 d-flex flex-row align-items-center justify-content-between'>
               <h6 className='m-0 font-weight-bold'>Orders</h6>
             </div>
@@ -167,7 +167,7 @@ export default function Home(props) {
       </div>
       <div className='row'>
         <div className='col-xl-8 col-md-7'>
-          <div className='card mb-4'>
+          <div className='card shadow mb-4'>
             <div className='card-header py-3 d-flex flex-row align-items-center justify-content-between'>
               <h6 className='m-0 font-weight-bold'>Vendors</h6>
             </div>
@@ -176,7 +176,7 @@ export default function Home(props) {
         </div>
 
         <div className='col-xl-4 col-md-5'>
-          <div className='card mb-4'>
+          <div className='card shadow mb-4'>
             <div className='card-header py-3 d-flex flex-row align-items-center justify-content-between'>
               <h6 className='m-0 font-weight-bold'>Upcoming</h6>
             </div>
