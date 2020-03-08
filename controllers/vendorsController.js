@@ -1,11 +1,30 @@
-'use strict';
+"use strict";
 
 const db = require(`../models`);
 
 module.exports = app => {
-app.get(`/api/vendors`, (req, res) => {
-    db.Vendor.findAll({})
-    .then(dbVendor => {
+  app.get(`/api/vendors`, (req, res) => {
+    db.Vendor.findAll({}).then(dbVendor => {
+      res.json(dbVendor);
+    });
+  });
+
+  app.get(`/api/vendors/:name`, (req, res) => {
+    db.Vendor.findOne({
+      where: {
+        name: req.params.name
+      }
+    }).then(dbVendor => {
+      res.json(dbVendor);
+    });
+  });
+
+  app.delete(`/api/vendors/:name`, (req, res) => {
+    db.Vendor.destroy({
+      where: {
+        name: req.params.name
+      }
+    }).then(dbVendor => {
       res.json(dbVendor);
     });
   });
@@ -26,4 +45,4 @@ app.get(`/api/vendors`, (req, res) => {
         res.json(err);
       });
   });
-}
+};
