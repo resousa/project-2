@@ -2,6 +2,10 @@ body {
   background-color: #e9e8e4;
 }
 
+[role='main'] {
+  padding-top: 56px;
+}
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -12,9 +16,9 @@ body {
 }
 
 .sidebar-sticky {
-  position: sticky;
-  top: 0;
-  height: calc(100vh-56px);
+  /* position: sticky; */
+  /* top: 0; */
+  /* height: calc(100vh-56px); */
   padding-top: 0.5rem;
   overflow-x: hidden;
   overflow-y: auto;
@@ -23,14 +27,6 @@ body {
 
 .sidebar .nav .fas {
   margin-right: 10px;
-}
-
-[role='main'] {
-  padding-top: 56px;
-}
-
-.card {
-  border-left: 5px solid;
 }
 
 .sidebar-divider {
@@ -42,18 +38,4 @@ body {
   border-style: inset;
   border-width: 1px;
   width: 80%;
-}
-
-/* .react-calendar {
-  min-width: 80%;
-} */
-
-.sticky-footer {
-  padding: 1.5rem;
-  margin: 0 -30px;
-  font-size: 0.75rem;
-}
-
-.search-box {
-  width: 30%;
 }
