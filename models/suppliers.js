@@ -32,7 +32,7 @@ module.exports = function(sequelize, DataTypes) {
         allowNull: true,
       },
       unit_cost: {
-        type: DataTypes.DECIMAL,
+        type: DataTypes.DECIMAL(8,2),
         allowNull: true,
       },
       createdAt: {

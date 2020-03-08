@@ -18,6 +18,7 @@ module.exports = app => {
       contract_end: req.body.contract_end,
     })
       .then(dbShoe => {
+
         res.json(dbShoe);
       })
       .catch(function(err) {
