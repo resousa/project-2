@@ -236,17 +236,13 @@ export default function Dashboard(props) {
                 </div>
               </div>
             </div>
-            <footer className='sticky-footer bg-dark'>
-              <div className='my-auto'>
-                <div className='copyright text-center my-auto'>
-                  <span className='text-muted'>
-                    Copyright &copy; 2020 oh CRUD
-                  </span>
-                </div>
-              </div>
-            </footer>
           </main>
         </div>
+        <footer className='sticky-footer bg-dark'>
+            <div className='text-center'>
+              <span className='text-muted'>Copyright &copy; 2020 oh CRUD</span>
+            </div>
+        </footer>
       </div>
     </div>
   );
