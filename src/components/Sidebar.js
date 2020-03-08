@@ -53,24 +53,12 @@ export default function Sidebar() {
               </div>
             </nav>
             <main role='main' className='col-md-9 ml-sm-auto col-lg-10 px-4'>
-              <Route path='/home'>
-                <Home />
-              </Route>
-              <Route path='/orders'>
-                <Orders />
-              </Route>
-              <Route path='/products'>
-                <Products />
-              </Route>
-              <Route path='/customers'>
-                <Customers />
-              </Route>
-              <Route path='/reports'>
-                <Reports />
-              </Route>
-              <Route path='/admin'>
-                <Admin />
-              </Route>
+              <Route path='/home' component={Home}/>
+              <Route path='/orders' component={Orders}/>
+              <Route path='/products' component={Products}/>
+              <Route path='/customers' component={Customers}/>
+              <Route path='/reports' component={Reports}/>
+              <Route path='/admin' component={Admin}/>
             </main>
           </div>
         </div>
