@@ -141,8 +141,8 @@ export default function Home(props) {
             </div>
           </div>
         </div>
-        <div className='col-xl-5 col-md-6'>
-          <div className='card shadow mb-4'>
+        <div className='col-xl-5 col-md-6 d-flex'>
+          <div className='card flex-fill shadow mb-4'>
             <div className='card-header py-3 d-flex flex-row align-items-center justify-content-between'>
               <h6 className='m-0 font-weight-bold'>Orders</h6>
             </div>
@@ -165,7 +165,7 @@ export default function Home(props) {
           </div>
         </div>
       </div>
-      <div className='row'>
+      <div className='row d-flex'>
         <div className='col-xl-8 col-md-7'>
           <div className='card shadow mb-4'>
             <div className='card-header py-3 d-flex flex-row align-items-center justify-content-between'>
@@ -180,7 +180,7 @@ export default function Home(props) {
             <div className='card-header py-3 d-flex flex-row align-items-center justify-content-between'>
               <h6 className='m-0 font-weight-bold'>Upcoming</h6>
             </div>
-            <div className='card-body justify-content-center'>
+            <div className='card-body'>
               <Calendar />
               <div className='pt-3'>
                 <span>placeholder, interactive calendar</span>
