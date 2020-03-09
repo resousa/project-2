@@ -24,8 +24,7 @@ export default function Sidebar() {
                   </li>
                   <li className='nav-item'>
                     <Link className='nav-link' to='/orders'>
-                      <i className='fas fa-file-invoice-dollar fa-fw'></i>{' '}
-                      Orders
+                      <i className='fas fa-file-invoice-dollar fa-fw'></i>Orders
                     </Link>
                   </li>
                   <li className='nav-item'>
@@ -53,12 +52,12 @@ export default function Sidebar() {
               </div>
             </nav>
             <main role='main' className='col-md-9 ml-sm-auto col-lg-10 px-4'>
-              <Route path='/home' component={Home}/>
-              <Route path='/orders' component={Orders}/>
-              <Route path='/products' component={Products}/>
-              <Route path='/customers' component={Customers}/>
-              <Route path='/reports' component={Reports}/>
-              <Route path='/admin' component={Admin}/>
+              <Route path='/home' component={Home} />
+              <Route path='/orders' component={Orders} />
+              <Route path='/products' component={Products} />
+              <Route path='/customers' component={Customers} />
+              <Route path='/reports' component={Reports} />
+              <Route path='/admin' component={Admin} />
             </main>
           </div>
         </div>
