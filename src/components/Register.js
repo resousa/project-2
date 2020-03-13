@@ -6,10 +6,10 @@ class Register extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      username: '',
-      full_name: '',
-      email: '',
-      password: ''
+      username: ``,
+      full_name: ``,
+      email: ``,
+      password: ``
     };
   }
 
@@ -73,7 +73,7 @@ class Register extends Component {
           </div>
           <div className='col-md-6'>
             <img
-              src={require('./assets/images/register-pic.jpg')}
+              src={require(`./assets/images/register-pic.jpg`)}
               width='360px'
               height='475px'
               alt='register-pic'

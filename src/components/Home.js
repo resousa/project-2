@@ -4,12 +4,12 @@ import Calendar from 'react-calendar';
 import './Home.css';
 
 const state = {
-  labels: ['January', 'February', 'March'],
+  labels: [`January`, `February`, `March`],
   datasets: [
     {
-      label: 'Sales',
-      backgroundColor: 'salmon',
-      borderColor: 'rgba(0,0,0,1)',
+      label: `Sales`,
+      backgroundColor: `salmon`,
+      borderColor: `rgba(0,0,0,1)`,
       borderWidth: 1,
       data: [65, 59, 80]
     }
@@ -17,12 +17,12 @@ const state = {
 };
 
 const state2 = {
-  labels: ['January', 'February', 'March'],
+  labels: [`January`, `February`, `March`],
   datasets: [
     {
-      label: 'Orders',
-      backgroundColor: ['red', 'blue', 'green'],
-      hoverBackgroundColor: ['#501800', '#501800', '#501800'],
+      label: `Orders`,
+      backgroundColor: [`red`, `blue`, `green`],
+      hoverBackgroundColor: [`#501800`, `#501800`, `#501800`],
       data: [100, 70, 150]
     }
   ]
@@ -129,12 +129,12 @@ export default function Home(props) {
                 options={{
                   title: {
                     display: true,
-                    text: 'Average Sales/Month',
+                    text: `Average Sales/Month`,
                     fontSize: 20
                   },
                   legend: {
                     display: true,
-                    position: 'right'
+                    position: `right`
                   }
                 }}
               />
@@ -152,12 +152,12 @@ export default function Home(props) {
                 options={{
                   title: {
                     display: true,
-                    text: 'Average Orders/Month',
+                    text: `Average Orders/Month`,
                     fontSize: 20
                   },
                   legend: {
                     display: true,
-                    position: 'right'
+                    position: `right`
                   }
                 }}
               />
