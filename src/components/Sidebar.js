@@ -3,8 +3,9 @@ import './Sidebar.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Home from './Home';
 import Orders from './Orders';
-import Products from './Products';
 import Vendors from './Vendors';
+import Suppliers from './Suppliers';
+import Shoes from './Shoes';
 import Reports from './Reports';
 import Admin from './Admin';
 
@@ -28,18 +29,18 @@ export default function Sidebar() {
                     </Link>
                   </li>
                   <li className='nav-item'>
-                    <Link className='nav-link' to='/products'>
-                      <i className='fas fa-shoe-prints fa-fw'></i> Products
+                    <Link className='nav-link' to='/shoes'>
+                      <i class='fas fa-shoe-prints'></i> Shoes
+                    </Link>
+                  </li>
+                  <li className='nav-item'>
+                    <Link className='nav-link' to='/suppliers'>
+                      <i class='fas fa-truck-loading'></i> Suppliers
                     </Link>
                   </li>
                   <li className='nav-item'>
                     <Link className='nav-link' to='/vendors'>
-                      <i className='fas fa-id-card fa-fw'></i> Vendors
-                    </Link>
-                  </li>
-                  <li className='nav-item'>
-                    <Link className='nav-link' to='/reports'>
-                      <i className='fas fa-file-alt fa-fw'></i> Reports
+                      <i class='fas fa-user-tag'></i> Vendors
                     </Link>
                   </li>
                   <hr className='sidebar-divider'></hr>
@@ -48,16 +49,22 @@ export default function Sidebar() {
                       <i className='fas fa-users-cog'></i> Admin
                     </Link>
                   </li>
+                  <li className='nav-item'>
+                    <Link className='nav-link' to='/reports'>
+                      <i className='fas fa-file-alt fa-fw'></i> Reports
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </nav>
             <main role='main' className='col-md-9 ml-sm-auto col-lg-10 px-4'>
               <Route path='/home' component={Home} />
               <Route path='/orders' component={Orders} />
-              <Route path='/products' component={Products} />
+              <Route path='/shoes' component={Shoes} />
+              <Route path='/suppliers' component={Suppliers} />
               <Route path='/vendors' component={Vendors} />
-              <Route path='/reports' component={Reports} />
               <Route path='/admin' component={Admin} />
+              <Route path='/reports' component={Reports} />
             </main>
           </div>
         </div>
