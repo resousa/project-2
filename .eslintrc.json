@@ -11,8 +11,38 @@
     "globals": {
       "chai": "readonly"
     },
-    "plugins": ["chai-friendly"],
-    "extends": ["eslint:recommended", "plugin:chai-friendly/recommended"],
+    "plugins": ["react"],
+    "extends": ["eslint:recommended", "plugin:react/recommended"],
+    "parserOptions": {
+          "ecmaVersion": 6,
+          "sourceType": "module",
+          "ecmaFeatures": {
+              "jsx": true
+          }
+      },
+      "settings": {
+        "react": {
+          "createClass": "createReactClass", // Regex for Component Factory to use,
+                                             // default to "createReactClass"
+          "pragma": "React",  // Pragma to use, default to "React"
+          "version": "detect", // React version. "detect" automatically picks the version you have installed.
+                               // You can also use `16.0`, `16.3`, etc, if you want to override the detected value.
+                               // default to latest and warns if missing
+                               // It will default to "detect" in the future
+          "flowVersion": "0.53" // Flow version
+        },
+        "propWrapperFunctions": [
+            // The names of any function used to wrap propTypes, e.g. `forbidExtraProps`. If this isn't set, any propTypes wrapped in a function will be skipped.
+            "forbidExtraProps",
+            {"property": "freeze", "object": "Object"},
+            {"property": "myFavoriteWrapper"}
+        ],
+        "linkComponents": [
+          // Components used as alternatives to <a> for linking, eg. <Link to={ url } />
+          "Hyperlink",
+          {"name": "Link", "linkAttribute": "to"}
+        ]
+      },
     "rules": {
       "array-bracket-spacing": "error",
       "array-callback-return": "error",
@@ -21,8 +51,6 @@
       "arrow-spacing": "error",
       "block-scoped-var": "error",
       "block-spacing": "error",
-      "camelcase": "error",
-      "chai-friendly/no-unused-expressions": 2,
       "comma-dangle": ["error", "never"],
       "comma-spacing": ["error", { "before": false, "after": true }],
       "curly": "error",
@@ -31,7 +59,6 @@
       "eqeqeq": "error",
       "eol-last": ["error", "always"],
       "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
-      "global-require": "error",
       "guard-for-in": "error",
       "indent": ["error", 2],
       "max-depth": ["error", 4],
@@ -53,34 +80,6 @@
       "no-func-assign": "error",
       "no-irregular-whitespace": "error",
       "no-lone-blocks": "error",
-      "no-magic-numbers": [
-        "error",
-        {
-          "ignore": [
-            -9,
-            -8,
-            -7,
-            -6,
-            -5,
-            -4,
-            -3,
-            -2,
-            -1,
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            3000,
-            8080
-          ]
-        }
-      ],
       "no-mixed-requires": "error",
       "no-multi-spaces": "error",
       "no-multiple-empty-lines": "error",
@@ -103,7 +102,8 @@
       "no-useless-concat": "error",
       "no-useless-rename": "error",
       "one-var": ["error", "never"],
-      "object-shorthand": "error",
+      "object-shorthand": "error",    
+      "parserOptions": 0,
       "prefer-arrow-callback": "error",
       "prefer-const": "error",
       "prefer-promise-reject-errors": "error",
@@ -113,7 +113,6 @@
       "rest-spread-spacing": ["error"],
       "semi": ["error", "always"],
       "semi-style": ["error", "last"],
-      "sort-imports": "error",
       "spaced-comment": ["error", "always"],
       "strict": "error",
       "vars-on-top": "error",
