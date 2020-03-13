@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Home from './Home';
 import Orders from './Orders';
 import Products from './Products';
-import Customers from './Customers';
+import Vendors from './Vendors';
 import Reports from './Reports';
 import Admin from './Admin';
 
@@ -33,8 +33,8 @@ export default function Sidebar() {
                     </Link>
                   </li>
                   <li className='nav-item'>
-                    <Link className='nav-link' to='/customers'>
-                      <i className='fas fa-id-card fa-fw'></i> Customers
+                    <Link className='nav-link' to='/vendors'>
+                      <i className='fas fa-id-card fa-fw'></i> Vendors
                     </Link>
                   </li>
                   <li className='nav-item'>
@@ -55,7 +55,7 @@ export default function Sidebar() {
               <Route path='/home' component={Home} />
               <Route path='/orders' component={Orders} />
               <Route path='/products' component={Products} />
-              <Route path='/customers' component={Customers} />
+              <Route path='/vendors' component={Vendors} />
               <Route path='/reports' component={Reports} />
               <Route path='/admin' component={Admin} />
             </main>
