@@ -1,4 +1,4 @@
-"use strict";
+
 
 const db = require(`../models`);
 
@@ -6,7 +6,7 @@ module.exports = app => {
   app.get(`/api/sales`, (req, res) => {
     db.Shoe.findAll({
       attributes: [
-        [db.sequelize.literal("SUM(inventory_sold * retail_price)"), "result"]
+        [db.sequelize.literal(`SUM(inventory_sold * retail_price)`), `result`]
       ]
     }).then(totalSold => {
       res.json(totalSold);
@@ -16,7 +16,7 @@ module.exports = app => {
   app.get(`/api/costs`, (req, res) => {
     db.Shoe.findAll({
       attributes: [
-        [db.sequelize.literal("SUM(inventory_sold * cost)"), "result"]
+        [db.sequelize.literal(`SUM(inventory_sold * cost)`), `result`]
       ]
     }).then(totalCost => {
       res.json(totalCost);
@@ -26,7 +26,7 @@ module.exports = app => {
   app.get(`/api/materials`, (req, res) => {
     db.Supplier.findAll({
       attributes: [
-        [db.sequelize.literal("SUM(supplies_purchased * unit_cost)"), "result"]
+        [db.sequelize.literal(`SUM(supplies_purchased * unit_cost)`), `result`]
       ]
     }).then(totalCost => {
       res.json(totalCost);

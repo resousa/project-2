@@ -30,17 +30,17 @@ export default function Sidebar() {
                   </li>
                   <li className='nav-item'>
                     <Link className='nav-link' to='/shoes'>
-                      <i class='fas fa-shoe-prints'></i> Shoes
+                      <i className='fas fa-shoe-prints'></i> Shoes
                     </Link>
                   </li>
                   <li className='nav-item'>
                     <Link className='nav-link' to='/suppliers'>
-                      <i class='fas fa-truck-loading'></i> Suppliers
+                      <i className='fas fa-truck-loading'></i> Suppliers
                     </Link>
                   </li>
                   <li className='nav-item'>
                     <Link className='nav-link' to='/vendors'>
-                      <i class='fas fa-user-tag'></i> Vendors
+                      <i className='fas fa-user-tag'></i> Vendors
                     </Link>
                   </li>
                   <hr className='sidebar-divider'></hr>

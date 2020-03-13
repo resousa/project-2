@@ -1,4 +1,4 @@
-"use strict";
+
 
 const db = require(`../models`);
 
@@ -40,7 +40,7 @@ module.exports = app => {
       .then(dbSupplier => {
         res.json(dbSupplier);
       })
-      .catch(function(err) {
+      .catch(err => {
         res.json(err);
       });
   });
