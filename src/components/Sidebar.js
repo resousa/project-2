@@ -20,7 +20,7 @@ export default function Sidebar() {
                 <ul className='nav flex-column'>
                   <li className='nav-item'>
                     <Link className='nav-link' to='/home'>
-                      <i className='fas fa-home fa-fw'></i> Dashboard
+                      <i className='fas fa-home fa-fw'></i>Dashboard
                     </Link>
                   </li>
                   <li className='nav-item'>
@@ -30,28 +30,28 @@ export default function Sidebar() {
                   </li>
                   <li className='nav-item'>
                     <Link className='nav-link' to='/shoes'>
-                      <i class='fas fa-shoe-prints'></i> Shoes
+                      <i class='fas fa-shoe-prints fa-fw'></i>Shoes
                     </Link>
                   </li>
                   <li className='nav-item'>
                     <Link className='nav-link' to='/suppliers'>
-                      <i class='fas fa-truck-loading'></i> Suppliers
+                      <i class='fas fa-truck-loading fa-fw'></i>Suppliers
                     </Link>
                   </li>
                   <li className='nav-item'>
                     <Link className='nav-link' to='/vendors'>
-                      <i class='fas fa-user-tag'></i> Vendors
+                      <i class='fas fa-user-tag fa-fw'></i>Vendors
                     </Link>
                   </li>
                   <hr className='sidebar-divider'></hr>
                   <li className='nav-item'>
                     <Link className='nav-link' to='/admin'>
-                      <i className='fas fa-users-cog'></i> Admin
+                      <i className='fas fa-users-cog fa-fw'></i>Admin
                     </Link>
                   </li>
                   <li className='nav-item'>
                     <Link className='nav-link' to='/reports'>
-                      <i className='fas fa-file-alt fa-fw'></i> Reports
+                      <i className='fas fa-file-alt fa-fw'></i>Reports
                     </Link>
                   </li>
                 </ul>
