@@ -33,7 +33,7 @@ export default function Home(props) {
     <div className='Home'>
       <div className='d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3'>
         <div>
-          <h2 className='font-weight-bold'>Welcome {props.name}</h2>
+          <h1 className='display-4 font-weight-bold'>Welcome {props.name}</h1>
         </div>
         <div className='search-box'>
           <input
