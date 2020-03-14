@@ -1,6 +1,6 @@
 import React from 'react';
 import './Sidebar.css';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 import Home from './Home';
 import Orders from './Orders';
 import Vendors from './Vendors';
@@ -11,7 +11,6 @@ import Admin from './Admin';
 
 export default function Sidebar() {
   return (
-    <Router>
       <div className='Sidebar'>
         <div className='container-fluid justify-content-between d-flex flex-column content-wrapper'>
           <div className='row'>
@@ -58,6 +57,7 @@ export default function Sidebar() {
               </div>
             </nav>
             <main role='main' className='col-md-9 ml-sm-auto col-lg-10 px-4'>
+              <Route exact path='/' component={Home} />
               <Route path='/home' component={Home} />
               <Route path='/orders' component={Orders} />
               <Route path='/shoes' component={Shoes} />
@@ -69,6 +69,5 @@ export default function Sidebar() {
           </div>
         </div>
       </div>
-    </Router>
   );
 }
