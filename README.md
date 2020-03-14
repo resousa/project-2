@@ -152,7 +152,7 @@ This CRM was created using React, Sequelize, and MySQL. The interface of the app
 
 ![Model](https://github.com/resousa/project-2/blob/dev/src/assets/images/Model.png?raw=true) 
 
-## Future Imporovements
+## Future Improvements
 
 - Create a beter log in system where the Admin can track User's activity. 
 - Be able to give User the permissions/ rights to be an Admin.
