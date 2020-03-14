@@ -1,13 +1,7 @@
 import React from 'react';
 import './Sidebar.css';
-import { Route, Link } from 'react-router-dom';
-import Home from './Home';
-import Orders from './Orders';
-import Vendors from './Vendors';
-import Suppliers from './Suppliers';
-import Shoes from './Shoes';
-import Reports from './Reports';
-import Admin from './Admin';
+import { Link } from 'react-router-dom';
+import Routes from './Routes';
 
 export default function Sidebar() {
   return (
@@ -57,14 +51,7 @@ export default function Sidebar() {
               </div>
             </nav>
             <main role='main' className='col-md-9 ml-sm-auto col-lg-10 px-4'>
-              <Route exact path='/' component={Home} />
-              <Route path='/home' component={Home} />
-              <Route path='/orders' component={Orders} />
-              <Route path='/shoes' component={Shoes} />
-              <Route path='/suppliers' component={Suppliers} />
-              <Route path='/vendors' component={Vendors} />
-              <Route path='/admin' component={Admin} />
-              <Route path='/reports' component={Reports} />
+              <Routes />
             </main>
           </div>
         </div>
