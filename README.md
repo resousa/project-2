@@ -152,6 +152,15 @@ This CRM was created using React, Sequelize, and MySQL. The interface of the app
 
 ![Model](https://github.com/resousa/project-2/blob/dev/src/assets/images/Model.png?raw=true) 
 
+## Future Imporovements
+
+- Create a beter log in system where the Admin can track User's activity. 
+- Be able to give User the permissions/ rights to be an Admin.
+
+<a href="https://drive.google.com/file/d/1yJHvVf1gL9gX1j8Ito8YC36e7MRB58zN/view"> Username/Password Authentication using Express/Node.js</a>
+
+<a href="https://drive.google.com/file/d/1eDSKRQAmc2IHXGoJa4_wgPZwCiV5diBf/view">Username/ Password Authentication using React and Okta(3rd party authentication application) </a>
+
 
 ## Authors
 - Justin Le (https://github.com/twopcz)
