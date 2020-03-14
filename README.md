@@ -15,10 +15,10 @@
 ## Info
 The JLR Shoes CRM is a used for the JLR Shoe company to track inventory, supplier info, and vendor info. It gives JLR Shoe company an advantage over the competition by having the most important company information accurately displayed in one place  
 
-![Dashboard]()  
+![Dashboard](https://github.com/resousa/project-2/blob/dev/src/assets/images/dashboard.PNG?raw=true)  
 Screenshot of the JLR Shoes dashboard.
 
-![Inventory]()
+![Inventory](https://github.com/resousa/project-2/blob/dev/src/assets/images/shoes.PNG?raw=true)
 Screenshot of the JLR Shoes inventory page.
 
 ## Technologies
