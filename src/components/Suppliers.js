@@ -15,17 +15,14 @@ const useStyles = makeStyles({
   }
 });
 
-function createData(sku, style, name, inventory, inventorySold, retailPrice, cost) {
-  return { sku, style, name, inventory, inventorySold, retailPrice, cost };
+function createData(name, supplies, contact, address, suppliesPurchased, unitCost) {
+  return { name, supplies, contact, address, suppliesPurchased, unitCost };
 }
 
 // placeholder suppliers data
 const rows = [
-  createData(`Frozen yoghurt`, 159, 6.0, 24, 4.0),
-  createData(`Ice cream sandwich`, 237, 9.0, 37, 4.3),
-  createData(`Eclair`, 262, 16.0, 24, 6.0),
-  createData(`Cupcake`, 305, 3.7, 67, 4.3),
-  createData(`Gingerbread`, 356, 16.0, 49, 3.9)
+  createData("CA leather", "leather", "818-723-3122", "774 South St. Los Angeles, CA 9008", 33978, 29.99),
+  createData("LXC rubber and composites", "soles", "206-421-1456", "832 4st St. Seattle, WA 98108", 77328, 14.99),
 ];
 
 export default function Suppliers() {
@@ -69,12 +66,13 @@ export default function Suppliers() {
                     <TableCell component='th' scope='row'>
                       {row.name}
                     </TableCell>
+                    <TableCell align='right'>{row.supplies}</TableCell>
                     <TableCell align='right'>{row.contact}</TableCell>
-                    <TableCell align='right'>{row.address}</TableCell>
                     <TableCell align='right'>
-                      {row.inventoryPurchased}
+                      {row.address}
                     </TableCell>
-                    <TableCell align='right'>{row.contractEnd}</TableCell>
+                    <TableCell align='right'>{row.suppliesPurchased}</TableCell>
+                    <TableCell align='right'>{row.unitCost}</TableCell>
                   </TableRow>
                 )}
               </TableBody>
