@@ -55,7 +55,7 @@ export default function Home(props) {
                     Earnings (Monthly)
                   </div>
                   <div className='h5 mb-0 font-weight-bold text-gray-800'>
-                    $50,000
+                    $1,712,241.71
                   </div>
                 </div>
                 <div className='col-auto'>
@@ -75,7 +75,7 @@ export default function Home(props) {
                     Earnings (Annual)
                   </div>
                   <div className='h5 mb-0 font-weight-bold text-gray-800'>
-                    $500,000
+                    $20,546,900.53
                   </div>
                 </div>
               </div>
@@ -89,10 +89,10 @@ export default function Home(props) {
               <div className='row no-gutters align-items-center'>
                 <div className='col mr-2'>
                   <div className='text-xs font-weight-bold text-primary text-uppercase -mb-1'>
-                    Orders
+                    Total Expenses
                   </div>
                   <div className='h5 mb-0 font-weight-bold text-gray-800'>
-                    50
+                  $8,061,801.55
                   </div>
                 </div>
               </div>
@@ -106,10 +106,10 @@ export default function Home(props) {
               <div className='row no-gutters align-items-center'>
                 <div className='col mr-2'>
                   <div className='text-xs font-weight-bold text-primary text-uppercase -mb-1'>
-                    Testing
+                    Materials Purchased
                   </div>
                   <div className='h5 mb-0 font-weight-bold text-gray-800'>
-                    zzzzz
+                  $2,178,146.94
                   </div>
                 </div>
               </div>
@@ -171,7 +171,9 @@ export default function Home(props) {
             <div className='card-header py-3 d-flex flex-row align-items-center justify-content-between'>
               <h6 className='m-0 font-weight-bold'>Vendors</h6>
             </div>
-            <div className='card-body'>asdfasdf</div>
+            <div className='card-body'>Shoe Locker</div>
+            <div className='card-body'>The Running Store</div>
+            <div className='card-body'>Big Sports</div>
           </div>
         </div>
 
@@ -183,7 +185,7 @@ export default function Home(props) {
             <div className='card-body'>
               <Calendar />
               <div className='pt-3'>
-                <span>placeholder, interactive calendar</span>
+                <span>Upcoming Events</span>
               </div>
             </div>
           </div>
