@@ -57,7 +57,7 @@ export default function Admin() {
           </div>
           <div className='col-md-6'>
             <img
-              src={require('../assets/images/register-pic.jpg')}
+              src={require(`../assets/images/register-pic.jpg`)}
               width='360px'
               height='475px'
               alt='register-pic'
