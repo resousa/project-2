@@ -150,7 +150,7 @@ Below is a full list of Dependencies used in the application.
 ## Summary
 This CRM was created using React, Sequelize, and MySQL. The interface of the application was created with React. There is a template that is created and then each React component is imported into the template. The data displayed within each component is done so with Sequelize. A few examples of the data we retrieve are total sales, total supply cost, and shoe inventory. With Sequelize the application also has the ability to add new data to a table or delete data from a table.  There Are a total of 4 tables for this application. For a more in depth overview of how this application works see the diagram below.
 
-![Model](------) 
+![Model](https://github.com/resousa/project-2/blob/readme/src/assets/images/Model.png?raw=true) 
 
 
 ## Authors
