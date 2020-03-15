@@ -22,11 +22,9 @@ function createData(name, contact, address, inventoryPurchased, contractEnd) {
 }
 
 const rows = [
-  createData(`Frozen yoghurt`, 159, 6.0, 24, 4.0),
-  createData(`Ice cream sandwich`, 237, 9.0, 37, 4.3),
-  createData(`Eclair`, 262, 16.0, 24, 6.0),
-  createData(`Cupcake`, 305, 3.7, 67, 4.3),
-  createData(`Gingerbread`, 356, 16.0, 49, 3.9)
+  createData(`big sports`, `818-979-3482`, `Front St. Los Angeles, CA 9008`, 3978, `01-01-2024`),
+  createData(`the running store`, `206-278-1893`,`278 1st St. Seattle, WA 98108`, 4759, `06-31-2022`),
+  createData(`shoe locker`, `818-345-7821`, `398 South St. Los Angeles CA 9008`, 3673, `01-01-2022`),
 ];
 
 class Vendors extends Component {

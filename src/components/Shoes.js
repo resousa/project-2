@@ -21,11 +21,21 @@ function createData(sku, style, name, inventory, inventorySold, retailPrice, cos
 
 // placeholder Shoes data
 const rows = [
-  createData(`Frozen yoghurt`, 159, 6.0, 24, 4.0),
-  createData(`Ice cream sandwich`, 237, 9.0, 37, 4.3),
-  createData(`Eclair`, 262, 16.0, 24, 6.0),
-  createData(`Cupcake`, 305, 3.7, 67, 4.3),
-  createData(`Gingerbread`, 356, 16.0, 49, 3.9)
+  createData("BB0001", "basketball", "dunk force", 1263, 1454, 129.99, 47.67),
+  createData("BB0002", "basketball", "hyper air", 263, 4552, 169.99, 77.46),
+  createData("BB0003", "basketball", "ultra max hi", 11233, 22312, 159.99, 64.68),
+  createData("BB0004", "basketball", "ultra max lo", 15246, 21231, 109.99, 42.41),
+  createData("BB0005", "basketball", "dunk force 2", 1263, 3212, 129.99, 47.67),
+  createData("BB0006", "basketball", "maxx force", 1263, 1123, 129.99, 47.67),
+  createData("RU0004", "running shoe", "trex", 2234, 2110, 209.99, 97.99),
+  createData("RU0001", "running shoe", "classic", 14263, 42346, 119.99, 42.93),
+  createData("RU0008", "running shoe", "SXX 450", 23450, 34286, 129.99, 47.89),
+  createData("BO0011", "boot", "steel toe", 763, 1234, 229.99, 97.99),
+  createData("BO0006", "boot", "cowboy", 263, 543, 189.99, 99.67),
+  createData("SL0004", "slipper", "slip on", 1263, 3452, 49.99, 19.27),
+  createData("SL0001", "slipper", "sheepskin", 1263, 2765, 49.99, 19.27),
+  createData("DR0004", "dress shoe", "oxford", 723, 826, 169.99, 87.60),
+  createData("DR0008", "dress shoe", "derby", 846, 967, 189.99, 102.65)
 ];
 
 export default function Shoes() {
@@ -42,7 +52,7 @@ export default function Shoes() {
             <Table className={classes.table} aria-label='simple table'>
               <TableHead>
                 <TableRow>
-                  <TableCell className='font-weight-bold'>SKU</TableCell>
+                  <TableCell className='font-weight-bold'>sku</TableCell>
                   <TableCell className='font-weight-bold' align='right'>
                     Style
                   </TableCell>
@@ -67,14 +77,16 @@ export default function Shoes() {
                 {rows.map(row =>
                   <TableRow key={row.name}>
                     <TableCell component='th' scope='row'>
-                      {row.name}
+                      {row.sku}
                     </TableCell>
-                    <TableCell align='right'>{row.contact}</TableCell>
-                    <TableCell align='right'>{row.address}</TableCell>
+                    <TableCell align='right'>{row.style}</TableCell>
+                    <TableCell align='right'>{row.name}</TableCell>
                     <TableCell align='right'>
-                      {row.inventoryPurchased}
+                      {row.inventory}
                     </TableCell>
-                    <TableCell align='right'>{row.contractEnd}</TableCell>
+                    <TableCell align='right'>{row.inventorySold}</TableCell>
+                    <TableCell align='right'>{row.retailPrice}</TableCell>
+                    <TableCell align='right'>{row.cost}</TableCell>
                   </TableRow>
                 )}
               </TableBody>
