@@ -1,0 +1,41 @@
+body {
+  background-color: #e9e8e4;
+}
+
+[role='main'] {
+  padding-top: 56px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 48px 0 0;
+}
+
+.sidebar-sticky {
+  /* position: sticky; */
+  /* top: 0; */
+  /* height: calc(100vh-56px); */
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0;
+}
+
+.sidebar .nav .fas {
+  margin-right: 10px;
+}
+
+.sidebar-divider {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 80%;
+}
